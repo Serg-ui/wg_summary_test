@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+    <table border="1px" cellpadding="5" cellspacing="5">
+        <tr>
+            <td><b>Слово</b></td>
+            <td><b>tf</b></td>
+            <td><b>idf</b></td>
+        </tr>
+        {% for d in data %}
+           <tr>
+            <td>{{ d.0 }}</td>
+            <td>{{ d.1.0 }}</td>
+            <td>{{ d.1.2 }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
